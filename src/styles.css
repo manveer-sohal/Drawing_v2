@@ -10,6 +10,24 @@ body {
   padding: 10px 10px;
   border: 2px solid #000;
 }
+
+.Menue {
+  background-color: gray;
+  position: relative;
+  top: -122vh;
+  left: 152vh;
+  width: 50vh;
+  height: 100vh;
+  border: 10px solid black;
+}
+.slidecontainer p1 {
+  color: black;
+}
+
+.slidecontainer {
+  position: absolute;
+  top: 50px;
+}
 .red a:hover,
 a.red:active {
   color: #fff;
@@ -116,15 +134,6 @@ a2.size:active {
   text-decoration: none;
 }
 
-.img img {
-  border: 10px solid #000;
-  border-radius: 1000px;
-  padding: 1px;
-  position: relative;
-  display: inline-block;
-  float: right;
-  right: 10vh;
-}
 #gamescreen {
   border: 10px solid black;
   margin: 0;

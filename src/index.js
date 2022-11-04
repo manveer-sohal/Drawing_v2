@@ -15,19 +15,26 @@ let drawY;
 let predrawX = 0;
 let predrawY = 0;
 let colour = "black";
-let r = "#FF0000";
-let g = 100;
-let b = 0;
 let Brush_Size = 2;
 let Colour_Size = 2;
 let Eraser_Size = 2;
+
+//gets the slider from index
+var slider = document.getElementById("myRange");
+//gets the value of the slider
+var output = document.getElementById("Size");
+//no idea but shows the value beside the slider
+output.innerHTML = slider.value;
+slider.oninput = function () {
+  output.innerHTML = this.value;
+};
+//
 
 document.addEventListener("mousedown", mouseDown);
 function mouseDown() {
   test = true;
   Color();
   drawX = event.clientX - canvas.getBoundingClientRect().left - 10;
-  //console.log(drawY, drawX);
 
   drawY = event.clientY - canvas.getBoundingClientRect().top - 10;
 
@@ -43,12 +50,16 @@ function mouseDown() {
     }
   }
 }
-
 document.addEventListener("mouseup", mouseUp);
 function mouseUp() {
   test = false;
+  Size();
 }
 
+//sets the size of the brush to the value of the slider
+function Size() {
+  Brush_Size = slider.value;
+}
 function draw() {
   ctx.beginPath();
   ctx.moveTo(predrawX, predrawY);

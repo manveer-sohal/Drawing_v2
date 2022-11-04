@@ -1,0 +1,132 @@
+body {
+  font-family: sans-serif;
+}
+.red a {
+  background-color: red;
+  color: #000;
+  display: inline-block;
+  height: 15px;
+  width: 55px;
+  padding: 10px 10px;
+  border: 2px solid #000;
+}
+.red a:hover,
+a.red:active {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 10px;
+  border: 5px solid #000;
+}
+.black a {
+  background-color: black;
+  color: #fff;
+  display: inline-block;
+  height: 15px;
+  width: 55px;
+  padding: 10px 10px;
+  border: 2px solid #000;
+}
+.black a:hover,
+a:active {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 10px;
+  border: 5px solid rgba(88, 81, 81, 0.582);
+}
+.green a {
+  background-color: green;
+  color: #000;
+  display: inline-block;
+  height: 15px;
+  width: 55px;
+  padding: 10px 10px;
+  border: 2px solid #000;
+}
+.green a:hover,
+a.green:active {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 10px;
+  border: 5px solid #000;
+}
+.blue a {
+  background-color: blue;
+  color: #000;
+  display: inline-block;
+  height: 15px;
+  width: 55px;
+  padding: 10px 10px;
+  border: 2px solid #000;
+}
+.blue a:hover,
+a.blue:active {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 10px;
+  border: 5px solid #000;
+}
+.yellow a {
+  background-color: yellow;
+  color: #000;
+  display: inline-block;
+  height: 15px;
+  width: 55px;
+  padding: 10px 10px;
+  border: 2px solid #000;
+}
+.yellow a:hover,
+a.yellow:active {
+  color: #fff;
+  text-decoration: none;
+  height: 15px;
+  width: 55px;
+  border: 5px solid #000;
+}
+
+.erase a {
+  background-color: white;
+  color: #000;
+  display: inline-block;
+  height: 15px;
+  width: 55px;
+  padding: 10px 10px;
+  border: 2px solid #000;
+}
+.erase a:hover {
+  border: 5px solid #000;
+}
+
+.size a2 {
+  background-color: white;
+  border: 2px solid #000;
+  color: #000;
+  display: none;
+  height: 15px;
+  width: 55px;
+  padding: 10px 10px;
+}
+
+.size a2:hover,
+a2.size:active {
+  border: 5px solid #000;
+}
+
+.erase:hover .size a2 {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.img img {
+  border: 10px solid #000;
+  border-radius: 1000px;
+  padding: 1px;
+  position: relative;
+  display: inline-block;
+  float: right;
+  right: 10vh;
+}
+#gamescreen {
+  border: 10px solid black;
+  margin: 0;
+  padding: 0;
+}

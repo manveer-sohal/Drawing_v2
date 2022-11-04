@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <script>
+      
+        function ctx(){
+        let canvas = document.getElementById("gamescreen");
+        let ctx = canvas.getContext("2d");
+        }
+
+       function color(){
+        ctx.fillStyle = "red"; 
+
+      }
+      
+        </script>
+  <head>
+    <title>Drawing</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="src/styles.css"></link>
+    <script text="text/javascript", src="src/index.js"> </script>
+    <style>
+      
+      li{
+          cursor: pointer;
+
+      }
+  </style>
+    
+  </head>
+
+  <body onload = "ctx()">
+
+    <div class = img>
+      <img id="ColorWheel" width="200" height="200" src="src/ColorWheel.png" alt="colorwheel"></img>
+    </div>
+    
+    <ul>
+      <li><canvas id="gamescreen" width = "1000" height = "500"> </canvas></li>
+    </ul>
+    
+    <div class = "red">
+      <a id="Red">Red</a>
+      <p id = "red"></p>
+    </div>
+    <div class = "black">
+      <a id="Black">Black</a>
+      <p id = "black"><p>
+      </div>
+    <div class = "green">
+      <a id="Green">Green</a>
+      <p id = "green"><p>
+      </div>
+    <div class = "blue">
+      <a id="Blue">Blue</a>
+      <p id = "blue"><p>
+      </div>
+    <div class = "yellow">
+      <a id="Yellow">Yellow</a>
+      <p id = "green"><p>
+      </div>
+
+    <div class = "erase">
+        <a id="white">Erase</a>
+      <div class = "size">
+        <a2 id="small">small</a2>
+        <a2 id="medium">medium</a2>
+        <a2 id="large">large</a2>
+      </div>
+      
+      </div>
+      
+      <div class = "color wheel">
+          <canvas id="picker" var="1" width="300" height="300"></canvas>
+          
+          <div class="controls">
+              <div><label>R</label> <input type="text" id="rVal" /></div>
+              <div><label>G</label> <input type="text" id="gVal" /></div>
+              <div><label>B</label> <input type="text" id="bVal" /></div>
+              <div><label>RGB</label> <input type="text" id="rgbVal" /></div>
+              <div><label>HEX</label> <input type="text" id="hexVal" /></div>
+          </div>
+      </div>
+
+  </body>
+</html>
